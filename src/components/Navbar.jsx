@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/Dabhe_Mohan.png'
 
 export default function Navbar() {
   const [collapsed, setCollapsed] = useState(true);
@@ -11,9 +11,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dar" style={{backgroundColor:"#598C42"}}>
+    <nav className="navbar navbar-expand-lg navbar-dar sticky-top" style={{backgroundColor:"#99EDC3"}}>
       <div className="container">
-        <Link className="navbar-brand" to="/"><img src={Logo}></img></Link>
+        <Link className="navbar-brand" to="/"><img src={Logo} style={{height:"100px"}}></img></Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,22 +28,22 @@ export default function Navbar() {
         <div className={`collapse navbar-collapse ${!collapsed ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/">मुखपृष्ठ</Link>
+              <Link className="nav-link text-black" to="/">मुखपृष्ठ</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/projects">प्रकल्प</Link>
+              <Link className="nav-link text-black" to="/projects">प्रकल्प</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/culture">संस्कृतिक कार्यक्रम</Link>
+              <Link className="nav-link text-black" to="/culture">संस्कृतिक कार्यक्रम</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/sports">क्रीडा</Link>
+              <Link className="nav-link text-black" to="/sports">क्रीडा</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/contact">संपर्क</Link>
+              <Link className="nav-link text-black" to="/contact">संपर्क</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/about">आमच्याबद्दल</Link>
+              <Link className="nav-link text-black" to="/about">आमच्याबद्दल</Link>
             </li>
           </ul>
         </div>
